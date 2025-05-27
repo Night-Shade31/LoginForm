@@ -37,7 +37,7 @@
         }
 
         .formDiv {
-            display: flex;
+            display: grid;
             justify-content: center;
             align-items: center;
             gap: 20px;
@@ -78,23 +78,26 @@
             text-decoration: underline;
         }
 
-        a {
-            text-decoration: none;
-            color: rgb(255, 255, 255);
+        a{
+            font-weight: 600;
         }
+
+        a:hover {
+            transition: all 0.6s ease;
+        }
+
     </style>
 </head>
 
 <body>
     <div id="container">
         <form action="">
-            <img src="https://t3.ftcdn.net/jpg/04/92/75/18/360_F_492751838_Ybun2zwpQC8AZv11AwZLdXJk4cUrTt5z.jpg"
-                alt="Welcome_page_imgae">
             <h3>Other methods</h3>
+            <img src="https://www.shutterstock.com/image-vector/confused-man-forgetting-her-password-260nw-2477554171.jpg"
+                alt="Welcome_page_imgae">
             <div class="formDiv">
-                <button><a href="forgot.html">Email</a></button>
-                <button><a href="forgot2.html">Phone Number</a></button>
-                <button><a href="forgot3.html">Employee ID</a></button>
+                <p>Try using <a href="forgot.html">Email -></a></p>
+                <p>Try using <a href="forgot2.html">Phone Number -></a></p>
             </div>
         </form>
     </div>

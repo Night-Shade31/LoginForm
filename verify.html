@@ -37,8 +37,8 @@
         }
 
         .formDiv {
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            justify-content: center;
             align-items: center;
             gap: 20px;
         }
@@ -65,13 +65,13 @@
         }
 
         button {
-            padding: 5px;
+            padding: 10px;
             border-radius: 5px;
             background-color: rgb(140, 140, 241);
             border: 0px;
             box-shadow: 0px 0px 10px rgb(184, 184, 184);
             color: rgb(255, 255, 255);
-            font-weight: 400;
+            font-weight: 600;
         }
 
         button:hover {
@@ -90,24 +90,28 @@
             text-decoration: underline;
             color: blue;
         }
+
+        h3 {
+            text-align: center;
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
     <div id="container">
         <form action="">
-            <img src="https://t3.ftcdn.net/jpg/04/92/75/18/360_F_492751838_Ybun2zwpQC8AZv11AwZLdXJk4cUrTt5z.jpg"
+            <h3>Confirm Verification</h3>
+            <img src="https://media.istockphoto.com/id/1306827906/vector/man-forgot-the-password-concept-of-forgotten-password-key-account-access-blocked-access.jpg?s=612x612&w=0&k=20&c=67nYr3ztbOn5uO6-mWBNCSw9mcHD9Z5M-QER-azGQ5w="
                 alt="Welcome_page_imgae">
             <div class="formDiv">
-                <label for="empID">Employee ID</label>
+                <label for="empID">Enter Confirmation Code</label>
                 <input type="text" name="empID" id="empID">
             </div>
             <div class="formDiv2">
-                <button><a href="password.html">Send verification</a></button>
+                <button><a href="password.html">Confirm</a></button>
             </div>
-            <div class="formDiv2">
-                <a href="useOtherWays.html"><h4>use other methods</h4></a>
-            </div>
+            
         </form>
     </div>
 </body>

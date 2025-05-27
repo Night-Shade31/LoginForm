@@ -50,6 +50,13 @@
             gap: 20px;
         }
 
+        .formDiv3 {
+            display: flex;
+            justify-content: right;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
         input {
             padding: 3px;
             border: 0px;
@@ -65,13 +72,13 @@
         }
 
         button {
-            padding: 5px;
+            padding: 10px;
             border-radius: 5px;
             background-color: rgb(140, 140, 241);
             border: 0px;
             box-shadow: 0px 0px 10px rgb(184, 184, 184);
             color: rgb(255, 255, 255);
-            font-weight: 400;
+            font-weight: 600;
         }
 
         button:hover {
@@ -86,9 +93,15 @@
             color: rgb(255, 255, 255);
         }
 
-        h4 {
+        h3 {
+            text-align: center;
             text-decoration: underline;
-            color: blue;
+        }
+
+        .forgot {
+            color: blue;            
+            text-decoration: underline;
+            text-align: right;
         }
     </style>
 </head>
@@ -96,6 +109,7 @@
 <body>
     <div id="container">
         <form action="">
+            <h3>Login</h3>
             <img src="https://www.pushengage.com/wp-content/uploads/2022/02/Best-Website-Welcome-Message-Examples.png"
                 alt="Welcome_page_imgae">
             <div class="formDiv">
@@ -106,15 +120,18 @@
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password">
             </div>
-            <div class="formDiv2">
-                <button>Login</button>
-                <button><a href="register.html">Register</a></button>
-            </div>
-            <div class="formDiv">
-                <a href="forgot.html">
-                    <h4>Forget password?</h4>
+            <div class="formDiv3">
+                <a href="forgot.html" class="forgot">
+                    Forgot password?
                 </a>
             </div>
+            <div class="formDiv2">
+                <button>Login</button>
+            </div>
+            <div class="formDiv2">
+                <p>New user register <a href="register.html" class="forgot">here</a></p>
+            </div>
+            
         </form>
     </div>
 </body>
