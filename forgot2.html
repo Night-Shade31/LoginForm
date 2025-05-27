@@ -23,6 +23,7 @@
         form {
             display: grid;
             gap: 20px;
+            position: relative;
             justify-content: center;
             align-items: center;
             box-shadow: 0px 0px 10px rgb(184, 184, 184);
@@ -56,6 +57,7 @@
             outline-color: transparent;
             border-radius: 5px;
             width: 170px;
+            text-align: center;
             box-shadow: 0px 0px 10px rgb(184, 184, 184);
         }
 
@@ -95,18 +97,29 @@
             text-decoration: underline;
             color: blue;
         }
+
+        #backBtn {
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            padding: 5px;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
     </style>
 </head>
 
 <body>
     <div id="container">
-        <form action="">
+        <form action="">            
+            <button id="backBtn"> <- </button>
             <h3>Try using Phone Number</h3>
             <img src="https://t3.ftcdn.net/jpg/04/92/75/18/360_F_492751838_Ybun2zwpQC8AZv11AwZLdXJk4cUrTt5z.jpg"
                 alt="Welcome_page_imgae">
             <div class="formDiv2">
                 <label for="number">Phone Number</label>
-                <input type="tel" name="number" id="number">
+                <input type="tel" name="number" id="number" placeholder="9444444444">
             </div>
             <div class="formDiv2">
                 <button><a href="verify.html">Verify</a></button>

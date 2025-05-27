@@ -22,6 +22,7 @@
 
         form {
             display: grid;
+            position: relative;
             gap: 20px;
             justify-content: center;
             align-items: center;
@@ -86,12 +87,22 @@
             transition: all 0.6s ease;
         }
 
+        #backBtn {
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            padding: 5px;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
     </style>
 </head>
 
 <body>
     <div id="container">
-        <form action="">
+        <form action="">            
+            <button id="backBtn"> <- </button>
             <h3>Other methods</h3>
             <img src="https://www.shutterstock.com/image-vector/confused-man-forgetting-her-password-260nw-2477554171.jpg"
                 alt="Welcome_page_imgae">

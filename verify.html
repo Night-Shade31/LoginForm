@@ -22,6 +22,7 @@
 
         form {
             display: grid;
+            position: relative;
             gap: 20px;
             justify-content: center;
             align-items: center;
@@ -38,7 +39,7 @@
 
         .formDiv {
             display: grid;
-            justify-content: center;
+            justify-items: center;
             align-items: center;
             gap: 20px;
         }
@@ -55,8 +56,9 @@
             border: 0px;
             outline-color: transparent;
             border-radius: 5px;
-            width: 170px;
+            width: 100px;
             box-shadow: 0px 0px 10px rgb(184, 184, 184);
+            text-align: center;
         }
 
         input:hover {
@@ -95,22 +97,48 @@
             text-align: center;
             text-decoration: underline;
         }
+
+        #backBtn {
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            padding: 5px;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+
+        .highlight {
+            color: blue;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+
     </style>
 </head>
 
 <body>
     <div id="container">
-        <form action="">
+        <form action="">            
+            <button id="backBtn"> <- </button>
             <h3>Confirm Verification</h3>
             <img src="https://media.istockphoto.com/id/1306827906/vector/man-forgot-the-password-concept-of-forgotten-password-key-account-access-blocked-access.jpg?s=612x612&w=0&k=20&c=67nYr3ztbOn5uO6-mWBNCSw9mcHD9Z5M-QER-azGQ5w="
                 alt="Welcome_page_imgae">
             <div class="formDiv">
                 <label for="empID">Enter Confirmation Code</label>
-                <input type="text" name="empID" id="empID">
+                <input type="text" name="empID" id="empID" placeholder="  *  *  *  *  *  *  ">
             </div>
+            
             <div class="formDiv2">
                 <button><a href="password.html">Confirm</a></button>
             </div>
+
+            <div class="formDiv2">
+                <p>Don't receive code <a href="" class="highlight">resend</a></p>
+            </div>
+
+            
             
         </form>
     </div>

@@ -22,6 +22,7 @@
 
         form {
             display: grid;
+            position: relative;
             gap: 20px;
             justify-content: center;
             align-items: center;
@@ -104,22 +105,33 @@
             text-align: center;
             text-decoration: underline;
         }
+
+        #backBtn {
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            padding: 5px;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
     </style>
 </head>
 
 <body>
     <div id="container">
-        <form action="">
+        <form action="">            
+            <button id="backBtn"> <- </button>
             <h3>Registeration</h3>
             <img src="https://expologic.com/wp-content/uploads/2024/05/EL-BLG2404-How-Group-Registration-Benefits-Event-Organizers-and-Participants-1.png"
                 alt="Welcome_page_imgae">
             <div class="formDiv">
-                <label for="empName">Employee Name</label>
-                <input type="text" name="empName" id="empName">
+                <label for="empName">Name</label>
+                <input type="text" name="empName" id="empName" placeholder="Vignesh">
             </div>
             <div class="formDiv">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" placeholder="vignesh@gmail.com">
             </div>
 
             <div class="formDiv">
@@ -134,11 +146,11 @@
             </div>
             <div class="formDiv">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" placeholder=" * * * * * * * * * * ">
             </div>
             <div class="formDiv">
                 <label for="c_password">Conform Password</label>
-                <input type="password" name="c_password" id="c_password">
+                <input type="password" name="c_password" id="c_password" placeholder=" * * * * * * * * * * ">
             </div>
             <div class="formDiv2">
                 <button><a href="index.html">Register</a></button>

@@ -29,6 +29,7 @@
             border-radius: 15px;
             padding: 30px;
             margin: 40px;
+            position: relative;
         }
 
         img {
@@ -103,22 +104,32 @@
             text-decoration: underline;
             text-align: right;
         }
+        #backBtn {
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            padding: 5px;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
     </style>
 </head>
 
 <body>
     <div id="container">
         <form action="">
+            <button id="backBtn"> <- </button>
             <h3>Login</h3>
             <img src="https://www.pushengage.com/wp-content/uploads/2022/02/Best-Website-Welcome-Message-Examples.png"
                 alt="Welcome_page_imgae">
             <div class="formDiv">
-                <label for="empID">Employee ID</label>
-                <input type="text" name="empID" id="empID">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="vignesh@gamil.com">
             </div>
             <div class="formDiv">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" placeholder=" * * * * * * * * * * ">
             </div>
             <div class="formDiv3">
                 <a href="forgot.html" class="forgot">
